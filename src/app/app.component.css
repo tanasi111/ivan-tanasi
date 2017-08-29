@@ -1,0 +1,21 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 100px 500px 100px;
+  grid-template-areas: "sidenav content" "sidenav content" "footer footer";
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #8ca0ff;
+}
+
+.content {
+  grid-area: content;
+  background-color: #ffa08c;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ffff64;
+}
