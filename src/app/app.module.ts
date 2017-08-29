@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdToolbarModule, MdButtonModule, MdSidenavModule, MdCardModule, MdListModule } from '@angular/material';
+import { MdToolbarModule, MdButtonModule, MdSidenavModule, MdCardModule, MdListModule, MdTabsModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
@@ -29,7 +29,8 @@ import { InterestComponent } from './interest.component';
     MdButtonModule,
     MdSidenavModule,
     MdCardModule,
-    MdListModule
+    MdListModule,
+    MdTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
