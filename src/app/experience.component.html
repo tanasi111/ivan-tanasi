@@ -3,13 +3,10 @@
 
 <md-card class="experience-md-card">
   <md-card-title>Experience</md-card-title>
-  <md-tab-group>
-    <md-tab label="Summary">
-      <p>...</p>
-    </md-tab>
-    <md-tab label="Full">
+    {{ experiences | json }}
+</md-card>
 
-      <p>...</p>
-    </md-tab>
-  </md-tab-group>
+<md-card class="experience-md-card">
+  <md-card-title>Experience</md-card-title>
+    {{ experiences | json }}
 </md-card>
