@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: 100px 500px 100px;
+  grid-template-rows: 100px auto 100px;
   grid-template-areas: "sidenav content" "sidenav content" "footer footer";
 }
 
