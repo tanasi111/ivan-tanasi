@@ -1,14 +1,13 @@
 <md-toolbar>
-  Experience</md-toolbar>
-
-
+  Experience
+</md-toolbar>
 
 <div>
   <div style="float:left; margin-left:20px; margin-top: 20px; width: 100%">
+
     <md-form-field>
       <input mdInput placeholder="Technology name">
     </md-form-field>
-
 
     <md-select placeholder="Technology type" style="width: 200px">
       <!-- <md-option *ngFor="let type of types" [value]="type.value">{{ type.value }}</md-option> -->
@@ -24,16 +23,18 @@
   </div>
 
 
-  <md-card *ngFor="let exp of experiences" class="experience-md-card" style="float:left; width:40%; margin-left:20px;">
+  <md-card *ngFor="let exp of experiences" class="experience-md-card" style="float:left; width:43%; margin-left:2%;">
+
     <md-card-header>
       <img md-card-avatar src={{exp.iconPath}}>
-      
       <md-card-title>{{exp.name}}</md-card-title>
       <md-card-subtitle>{{exp.type}}</md-card-subtitle>
     </md-card-header>
+
     <md-card-content>
       <p>{{exp.description}}</p>
     </md-card-content>
+
   </md-card>
 
   <md-spinner style="margin:50px auto;" *ngIf="!experiences"></md-spinner>
