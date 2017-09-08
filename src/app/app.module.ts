@@ -10,7 +10,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdToolbarModule, MdButtonModule, MdSidenavModule, MdCardModule, MdListModule, 
-         MdTabsModule, MdChipsModule, MdProgressSpinnerModule } from '@angular/material';
+         MdTabsModule, MdChipsModule, MdProgressSpinnerModule, MdInputModule, MdFormFieldModule, MdSelectModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav.component';
@@ -40,7 +40,10 @@ import { ExperienceService } from './experience.service';
     MdListModule,
     MdTabsModule,
     MdChipsModule,
-    MdProgressSpinnerModule
+    MdProgressSpinnerModule,
+    MdInputModule,
+    MdFormFieldModule,
+    MdSelectModule
   ],
   providers: [ExperienceService],
   bootstrap: [AppComponent]

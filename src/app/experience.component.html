@@ -1,18 +1,40 @@
 <md-toolbar>
   Experience</md-toolbar>
 
-<md-card *ngFor="let exp of experiences" class="experience-md-card" style="float:left; width:40%; margin-left:20px;">
-  <md-card-title>
-    {{exp.name}}
-  </md-card-title>
-  <md-chip-list>
-    <md-chip>{{exp.type}}</md-chip>
-  </md-chip-list>
-  <md-chip-list>
-    <md-chip>{{exp.description}}</md-chip>
-  </md-chip-list>
-  <md-chip-list>
-    <md-chip>{{exp.iconPath}}</md-chip>
-  </md-chip-list>
-</md-card>
-<md-spinner style="margin:10px auto;" *ngIf="!experiences"></md-spinner>
+
+
+<div>
+  <div style="float:left; margin-left:20px; margin-top: 20px; width: 100%">
+    <md-form-field>
+      <input mdInput placeholder="Technology name">
+    </md-form-field>
+
+
+    <md-select placeholder="Technology type" style="width: 200px">
+      <!-- <md-option *ngFor="let type of types" [value]="type.value">{{ type.value }}</md-option> -->
+      <md-option value="frameworks">Framework</md-option>
+      <md-option value="frameworks">Programming language</md-option>
+      <md-option value="frameworks">Code editor</md-option>
+      <md-option value="frameworks">IDE</md-option>
+      <md-option value="frameworks">Source control</md-option>
+      <md-option value="frameworks">OS</md-option>
+      <md-option value="frameworks">Tool</md-option>
+    </md-select>
+
+  </div>
+
+
+  <md-card *ngFor="let exp of experiences" class="experience-md-card" style="float:left; width:40%; margin-left:20px;">
+    <md-card-header>
+      <img md-card-avatar src={{exp.iconPath}}>
+      
+      <md-card-title>{{exp.name}}</md-card-title>
+      <md-card-subtitle>{{exp.type}}</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+      <p>{{exp.description}}</p>
+    </md-card-content>
+  </md-card>
+
+  <md-spinner style="margin:50px auto;" *ngIf="!experiences"></md-spinner>
+</div>
