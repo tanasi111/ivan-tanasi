@@ -3,7 +3,7 @@
 </md-toolbar>
 
 <div>
-  <div style="float:left; margin-left:20px; margin-top: 20px; width: 100%">
+  <div style="margin-left: 10px;margin-top: 20px;">
 
     <md-form-field>
       <input mdInput placeholder="Technology name">
@@ -23,7 +23,8 @@
   </div>
 
   <div class="technology">
-    <md-card *ngFor="let exp of experiences" class="experience-md-card" style="float:left; margin-left:2%;">
+
+    <md-card *ngFor="let exp of experiences">
 
       <md-card-header>
         <img md-card-avatar src={{exp.iconPath}}>
@@ -36,6 +37,7 @@
       </md-card-content>
 
     </md-card>
+
   </div>
 
   <md-spinner style="margin:50px auto;" *ngIf="!experiences"></md-spinner>
