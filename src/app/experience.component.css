@@ -9,3 +9,10 @@
 .mat-card-avatar {
   border-radius: 0%;
 }
+
+.wrapper .technology {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  /* grid-gap: 2em; */
+}
