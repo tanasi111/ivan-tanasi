@@ -3,25 +3,9 @@
 </md-toolbar>
 
 <div>
-  <div style="margin-left: 10px;margin-top: 20px;">
 
-    <md-form-field>
-      <input mdInput placeholder="Technology name">
-    </md-form-field>
-
-    <md-select placeholder="Technology type" style="width: 200px">
-      <!-- <md-option *ngFor="let type of types" [value]="type.value">{{ type.value }}</md-option> -->
-      <md-option value="frameworks">Framework</md-option>
-      <md-option value="frameworks">Programming language</md-option>
-      <md-option value="frameworks">Code editor</md-option>
-      <md-option value="frameworks">IDE</md-option>
-      <md-option value="frameworks">Source control</md-option>
-      <md-option value="frameworks">OS</md-option>
-      <md-option value="frameworks">Tool</md-option>
-    </md-select>
-
-  </div>
-
+  <app-experience-search></app-experience-search>
+  
   <div class="technology">
 
     <md-card *ngFor="let exp of experiences">

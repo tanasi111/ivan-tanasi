@@ -18,6 +18,7 @@ import { ExperienceComponent } from './experience.component';
 import { EducationComponent } from './education.component';
 import { InterestComponent } from './interest.component';
 import { ExperienceService } from './experience.service';
+import { ExperienceSearchComponent } from './experience-search.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ExperienceService } from './experience.service';
     SidenavComponent,
     ExperienceComponent,
     EducationComponent,
-    InterestComponent
+    InterestComponent,
+    ExperienceSearchComponent
   ],
   imports: [
     BrowserModule,
