@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -9,8 +10,10 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdToolbarModule, MdButtonModule, MdSidenavModule, MdCardModule, MdListModule, 
-         MdTabsModule, MdChipsModule, MdProgressSpinnerModule, MdInputModule, MdFormFieldModule, MdSelectModule } from '@angular/material';
+import {
+  MdToolbarModule, MdButtonModule, MdSidenavModule, MdCardModule, MdListModule,
+  MdTabsModule, MdChipsModule, MdProgressSpinnerModule, MdInputModule, MdFormFieldModule, MdSelectModule
+} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav.component';
@@ -18,7 +21,7 @@ import { ExperienceComponent } from './experience.component';
 import { EducationComponent } from './education.component';
 import { InterestComponent } from './interest.component';
 import { ExperienceService } from './experience.service';
-import { ExperienceSearchComponent } from './experience-search.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -27,11 +30,12 @@ import { ExperienceSearchComponent } from './experience-search.component';
     ExperienceComponent,
     EducationComponent,
     InterestComponent,
-    ExperienceSearchComponent
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     BrowserAnimationsModule,
     AppRoutingModule,
