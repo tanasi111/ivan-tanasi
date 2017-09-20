@@ -4,7 +4,7 @@ import { Experience } from './experience';
 import { ExperienceService } from './experience.service';
 
 @Component({
-    selector: 'experience',
+    selector: 'app-experience',
     templateUrl: './experience.component.html',
     styleUrls: ['./experience.component.css']
 })
