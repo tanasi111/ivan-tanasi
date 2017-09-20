@@ -7,25 +7,27 @@
   <div style="margin-left: 10px;margin-top: 20px;">
 
     <md-form-field>
-      <input mdInput placeholder="Technology name" [(ngModel)]="term">
+      <input mdInput placeholder="Technology name" [(ngModel)]="nameSearch">
     </md-form-field>
 
-    <md-select placeholder="Technology type" style="width: 200px">
-      <!-- <md-option *ngFor="let type of types" [value]="type.value">{{ type.value }}</md-option> -->
-      <md-option value="frameworks">Framework</md-option>
-      <md-option value="frameworks">Programming language</md-option>
-      <md-option value="frameworks">Code editor</md-option>
-      <md-option value="frameworks">IDE</md-option>
-      <md-option value="frameworks">Source control</md-option>
-      <md-option value="frameworks">OS</md-option>
-      <md-option value="frameworks">Tool</md-option>
+    <md-select placeholder="Technology type" style="width: 200px" [(ngModel)]="typeSearch">
+      <md-option value="">All</md-option>
+      <md-option value="JavaScript Framework">JavaScript Framework</md-option>
+      <md-option value="Web framework">Web framework</md-option>
+      <md-option value="Framework">Framework</md-option>
+      <md-option value="Programming language">Programming language</md-option>
+      <md-option value="Code editor">Code editor</md-option>
+      <md-option value="Source control">Source control</md-option>
+      <md-option value="IDE">IDE</md-option>
+      <md-option value="OS">OS</md-option>
+      <md-option value="Tool">Tool</md-option>
     </md-select>
 
   </div>
 
   <div class="technology">
 
-    <md-card *ngFor="let exp of experiences | filter:term">
+    <md-card *ngFor="let exp of experiences | filter:nameSearch:typeSearch">
 
       <md-card-header>
         <img md-card-avatar src={{exp.iconPath}}>

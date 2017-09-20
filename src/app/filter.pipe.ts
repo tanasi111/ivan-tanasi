@@ -4,14 +4,17 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
-
-  transform(technologyNames: any, term: any): any {
-    if (term === undefined) {
-      return technologyNames;
+  transform(items: Array<any>, nameSearch: string, typeSearch: string) {
+    if (items && items.length) {
+      return items.filter(item => {
+        if (nameSearch && item.name.toLowerCase().indexOf(nameSearch.toLowerCase()) === -1) {
+          return false;
+        }
+        if (typeSearch && item.type.toLowerCase().indexOf(typeSearch.toLowerCase()) === -1) {
+          return false;
+        }
+        return true;
+      });
     }
-    return technologyNames.filter(function (technologyName) {
-      return technologyName.name.toLowerCase().includes(term.toLowerCase());
-    });
   }
-
 }
