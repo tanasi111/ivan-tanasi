@@ -12,7 +12,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MdToolbarModule, MdButtonModule, MdSidenavModule, MdCardModule, MdListModule,
-  MdTabsModule, MdChipsModule, MdProgressSpinnerModule, MdInputModule, MdFormFieldModule, MdSelectModule
+  MdTabsModule, MdChipsModule, MdProgressSpinnerModule, MdInputModule, MdFormFieldModule, MdSelectModule, MdTooltipModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -49,7 +49,8 @@ import { FilterPipe } from './filter.pipe';
     MdProgressSpinnerModule,
     MdInputModule,
     MdFormFieldModule,
-    MdSelectModule
+    MdSelectModule,
+    MdTooltipModule
   ],
   providers: [ExperienceService],
   bootstrap: [AppComponent]
