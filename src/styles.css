@@ -1,14 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
-body {
-    font-family: Nunito;
+.mat-button,
+.mat-icon-button,
+.mat-raised-button {
+  font-family: 'Open Sans';
 }
 
-.mat-button, .mat-icon-button, .mat-raised-button {
-    font-family: Nunito;
-    
-}
+/* p {
+  font-family: 'Source Code Pro';
+} */
 
-nav { text-align: center }
+nav {
+  text-align: center;
+}
