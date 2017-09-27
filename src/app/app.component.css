@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: 100px auto 100px;
+  grid-template-rows: auto auto 100px;
   grid-template-areas: "sidenav content" "sidenav content" "footer footer";
 }
 
@@ -18,4 +18,20 @@
 .footer {
   grid-area: footer;
   background-color: #E0E0E0;
+}
+
+@media all and (max-width: 361px) {
+  /* grid-template-areas: "sidenav sidenav" "content content" "footer footer"; */
+  .sidenav {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+  .content {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+  .footer {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
 }
