@@ -1,8 +1,8 @@
 <div>
 
-  <div style="margin-left: 10px;margin-top: 20px;">
+  <div style="margin-left: 5px;margin-top: 20px; margin-bottom: 5px; margin-right: 5px; background-color: #fff; opacity: 0.8">
 
-    <md-form-field>
+    <md-form-field style="margin-left: 10px">
       <input mdInput placeholder="Technology name" [(ngModel)]="nameSearch">
     </md-form-field>
 
@@ -23,7 +23,7 @@
 
   <div class="technology">
 
-    <md-card *ngFor="let exp of experiences | filter:nameSearch:typeSearch">
+    <md-card *ngFor="let exp of experiences | filter:nameSearch:typeSearch" style="opacity: 0.8">
 
       <md-card-header>
         <img md-card-avatar src={{exp.iconPath}}>

@@ -7,17 +7,20 @@
 
 .sidenav {
   grid-area: sidenav;
-  background-color: #E8EAF6;
+  background-color: rgba(101, 115, 187, 0.56);
+  /* opacity: 0.8; */
 }
 
 .content {
   grid-area: content;
-  background-color: #FFF3E0;
+  /* background-color: #000000;
+  opacity: 0.7; */
 }
 
 .footer {
   grid-area: footer;
   background-color: #E0E0E0;
+  opacity: 0.56;
 }
 
 @media all and (max-width: 361px) {
