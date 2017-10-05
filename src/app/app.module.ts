@@ -23,6 +23,8 @@ import { InterestComponent } from './interest.component';
 import { ExperienceService } from './experience.service';
 import { FilterPipe } from './filter.pipe';
 
+import { GlobalDataService } from './global-data.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +54,7 @@ import { FilterPipe } from './filter.pipe';
     MdSelectModule,
     MdTooltipModule
   ],
-  providers: [ExperienceService],
+  providers: [ExperienceService, GlobalDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

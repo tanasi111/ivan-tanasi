@@ -6,7 +6,7 @@ import { EducationComponent } from './education.component';
 import { InterestComponent } from './interest.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/experience', pathMatch: 'full' },
+    { path: '', redirectTo: '/education', pathMatch: 'full' },
     { path: 'experience', component: ExperienceComponent },
     { path: 'education', component: EducationComponent },
     { path: 'interest', component: InterestComponent },
