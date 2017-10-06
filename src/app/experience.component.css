@@ -10,3 +10,12 @@
 .mat-card-avatar {
   border-radius: 0%;
 }
+
+.filter-technology {
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  background-color: #fff;
+  opacity: 0.8
+}
