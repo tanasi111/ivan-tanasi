@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ExperienceComponent } from './experience.component';
-import { EducationComponent } from './education.component';
+import { AboutComponent } from './about.component';
 import { InterestComponent } from './interest.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/education', pathMatch: 'full' },
+    { path: '', redirectTo: '/about', pathMatch: 'full' },
     { path: 'experience', component: ExperienceComponent },
-    { path: 'education', component: EducationComponent },
+    { path: 'about', component: AboutComponent },
     { path: 'interest', component: InterestComponent },
 ];
 
