@@ -13,6 +13,7 @@
 
 .content {
   grid-area: content;
+  min-width: 361px;
   /* background-color: #000000;
   opacity: 0.7; */
 }
