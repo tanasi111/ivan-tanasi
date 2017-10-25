@@ -1,12 +1,7 @@
 .about-md-card {
-    opacity: 0.79;
-    margin-top: 100px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-}
-
-.img-about {
-    /* opacity: 1 !important;
-    padding-right: 10px; */
+  opacity: 0.79;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
 }
