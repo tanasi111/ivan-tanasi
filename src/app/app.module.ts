@@ -19,7 +19,6 @@ import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav.component';
 import { ExperienceComponent } from './experience.component';
 import { AboutComponent } from './about.component';
-import { InterestComponent } from './interest.component';
 import { ExperienceService } from './experience.service';
 import { FilterPipe } from './filter.pipe';
 
@@ -31,7 +30,6 @@ import { GlobalDataService } from './global-data.service';
     SidenavComponent,
     ExperienceComponent,
     AboutComponent,
-    InterestComponent,
     FilterPipe
   ],
   imports: [
