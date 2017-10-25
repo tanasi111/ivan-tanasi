@@ -8,13 +8,10 @@
 .sidenav {
   grid-area: sidenav;
   background-color: rgba(101, 115, 187, 0.56);
-  /* opacity: 0.8; */
 }
 
 .content {
   grid-area: content;
-  /* background-color: #000000;
-  opacity: 0.7; */
 }
 
 .footer {
@@ -24,7 +21,6 @@
 }
 
 @media all and (max-width: 361px) {
-  /* grid-template-areas: "sidenav sidenav" "content content" "footer footer"; */
   .sidenav {
     grid-column: 1 / 2;
     grid-row: 1;
