@@ -36,7 +36,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 name: 'Notepad++',
                 description: `Notepad++ is a free source code editor and Notepad replacement that supports several languages`,
                 type: 'Code editor',
-                iconPath: './assets/img/ico/notepad++.jpg'
+                iconPath: './assets/img/ico/notepadplusplus.jpg'
             },
             {
                 id: 117,
