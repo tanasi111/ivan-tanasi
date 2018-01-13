@@ -11,8 +11,8 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  MdToolbarModule, MdButtonModule, MdSidenavModule, MdCardModule, MdListModule,
-  MdTabsModule, MdChipsModule, MdProgressSpinnerModule, MdInputModule, MdFormFieldModule, MdSelectModule, MdTooltipModule
+  MatToolbarModule, MatButtonModule, MatSidenavModule, MatCardModule, MatListModule,
+  MatTabsModule, MatChipsModule, MatProgressSpinnerModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatTooltipModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -39,18 +39,18 @@ import { GlobalDataService } from './global-data.service';
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     BrowserAnimationsModule,
     AppRoutingModule,
-    MdToolbarModule,
-    MdButtonModule,
-    MdSidenavModule,
-    MdCardModule,
-    MdListModule,
-    MdTabsModule,
-    MdChipsModule,
-    MdProgressSpinnerModule,
-    MdInputModule,
-    MdFormFieldModule,
-    MdSelectModule,
-    MdTooltipModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatListModule,
+    MatTabsModule,
+    MatChipsModule,
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatTooltipModule
   ],
   providers: [ExperienceService, GlobalDataService],
   bootstrap: [AppComponent]
