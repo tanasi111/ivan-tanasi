@@ -10,7 +10,11 @@ import { GlobalDataService } from './global-data.service';
     styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
+
     experiences: Experience[];
+    nameSearch: string;
+    typeSearch: string;
+
 
     constructor(private experienceService: ExperienceService, private globalData: GlobalDataService) {
         this.globalData.shareObj['background'] = 'exp-background';

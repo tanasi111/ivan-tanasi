@@ -10,6 +10,6 @@ import { GlobalDataService } from './global-data.service';
 export class AppComponent {
   title = 'app';
 
-  constructor(private globalData: GlobalDataService) {
+  constructor(public globalData: GlobalDataService) {
   }
 }
